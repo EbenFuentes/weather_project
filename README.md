@@ -18,10 +18,14 @@ python -m venv env_weather_proj
 
 On unix or macOS:
 
-> source bin/activate
+```
+source bin/activate
+```
 
 On Windows:
-> Scripts\activate
+```
+Scripts\activate
+```
 
 4. Now with the virtual environment actiavted, you should see ```(env_weather_proj) (base)``` in your terminal. Let's install the dependencies now. You can cd into the root of the project, weather_project, but the command can be run from anywhere:
 
