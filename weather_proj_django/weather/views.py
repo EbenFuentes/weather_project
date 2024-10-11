@@ -5,7 +5,7 @@ import requests, json
 # Create your views here.
 def LA_view(request):
     
-    api_key = "b7eea73524cc47609d561749241110"
+    api_key = "super_secret_key"
     url = "http://api.weatherapi.com/v1/current.json?key=" + api_key + "&q=Los Angeles"
 
     response = requests.get(url)
