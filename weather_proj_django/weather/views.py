@@ -1,0 +1,20 @@
+from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
+import requests, json
+
+# Create your views here.
+def LA_view(request):
+    
+    api_key = "b7eea73524cc47609d561749241110"
+    url = "http://api.weatherapi.com/v1/current.json?key=" + api_key + "&q=Los Angeles"
+
+    response = requests.get(url)
+
+    json_data = response.json()
+
+    location = json_data["location"]["name"], json_data["location"]["region"], json_data["location"]["country"]
+    temp_f = json_data["current"]["temp_f"]
+    condition = json_data["current"]["condition"]["text"]
+
+
+    return HttpResponse(f"Name: {location} <br> Temp (F): {temp_f} <br>Conditions: {condition}")
