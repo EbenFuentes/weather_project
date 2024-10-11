@@ -2,7 +2,10 @@
 
 A web app to view weather data for a location using weatherAPI.com. 
 
-### Getting Started
+### Requirement for project:
+1. Python 3.12.x installed on your machine. I used Python 3.12.4.
+
+## Getting Started
 
 To get started, let's clone the repo <br>
 
@@ -40,7 +43,7 @@ python -m pip install -r requirements.txt
 python manage.py runserver
 ```
 
-The development server runs at http://127.0.0.1:8000/. Currently, the la_view/ endpoind returns the location, current temperature, and current condition for Los Angeles using weatherAPI.
+The development server runs at http://127.0.0.1:8000/. Currently, the la_view/ endpoint returns the location, current temperature, and current condition for Los Angeles using weatherAPI.
 
 
 
