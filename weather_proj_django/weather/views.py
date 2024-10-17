@@ -5,7 +5,7 @@ import requests, json
 # Create your views here.
 def LA_view(request):
     
-    api_key = "super_secret_key"
+    api_key = "super_seecret_key"
     url = "http://api.weatherapi.com/v1/current.json?key=" + api_key + "&q=Los Angeles"
 
     response = requests.get(url)
@@ -18,3 +18,8 @@ def LA_view(request):
 
 
     return HttpResponse(f"Name: {location} <br> Temp (F): {temp_f} <br>Conditions: {condition}")
+
+def home_view(request):
+    str1 = "yurr"
+    context = {"str1":str1}
+    return render(request, "weather/home.html", context)
