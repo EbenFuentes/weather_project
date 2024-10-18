@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/yeti/bootstrap.min.css" integrity="sha256-yQSa9mhO0DKspJtjVih93Js/qnKpxaP2FnyamSbKqEk=" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-sm bg-dark p-0" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/yeti/bootstrap.min.css"
+      integrity="sha256-yQSa9mhO0DKspJtjVih93Js/qnKpxaP2FnyamSbKqEk="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-primary " data-bs-theme="dark">
       <div class="container-fluid">
-        <li>
-            {{ str1 }}
-        </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Weather App
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../LA_view">LA_view</a>
+            </li>
+            
+            
+          </ul>
+
+        </div>
       </div>
+    </nav>
 
+    <div class="container-fluid">
+      <div class="container text-center">
+        <div class="row">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
-</body>
+          <div class="col">
+            
+          </div>
+          
+          <div class="col-8">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search a city" aria-label="Search a ciyu" aria-describedby="button-addon2">
+              <button class="btn btn-outline-info" type="button" id="button-addon2">Search</button>
+            </div>
+          </div>
+
+          <div class="col">
+            
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            Column
+          </div>
+
+          <div class="col-8">
+            Column
+          </div>
+
+          <div class="col">
+            Column
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
